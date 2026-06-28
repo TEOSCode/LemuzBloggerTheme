@@ -14,27 +14,60 @@ a{
     text-decoration: none;
     color:#a763ff;
 }
+.btn{
+    padding: 10px 20px;
+    border: 1px solid #9441ff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background-color: #2b114b;
+}
+.btn.morado{
+    background-color: #9441ff;
+    color:white;
+}
+.btn.morado i{
+    margin-left: 5px;
+    color:white;
+}
+.btn.morado:hover{
+    background-color: #2b114b;
+}
+.btn.whiteText{
+    color:white
+}
+.btn.whiteText i{
+    margin-left: 5px;
+    color:#9441ff
+}
 
 
 /* Menu CSS */
 nav{
     background-color: black;
-    height: auto;
+    height: 65px;
     width: 100%;
+    -webkit-box-shadow: 0px 10px 15px -10px rgba(148,65,255,0.21); 
+    box-shadow: 0px 10px 15px -10px rgba(148,65,255,0.21);
+    z-index: 100;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
 }
 nav ul{
     display: flex;
     list-style: none; /* Elimina los puntos de la lista */
     padding: 0;
     margin: 0;
-    gap: 30px; /* Espacio entre los elementos (opcional) */
+    gap: 20px; /* Espacio entre los elementos (opcional) */
     font-size: 15px;
 }
 nav li{
     padding: 25px 0;
 }
 nav a{
-    padding: 10px 0;
+    padding: 8px 0;
     text-decoration: none;
     color:rgb(219, 219, 219);
     transition: all 0.3s ease;
@@ -52,44 +85,108 @@ nav a:hover{
     color:#a763ff;
     border-bottom: 2px solid #a763ff;
 }
+.logo img{
+    margin-top: 2px;
+    height: 60px;
+    width: auto;
+}
 
 
 /* Hero CSS */
 .hero{
     margin: auto;
-    background-color: #111217;
+    margin-top: 68px;
 }
 .herotop-container{
     max-width: 1200px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    align-items: center;
 }
+.heroLeft{
+    width: 35%;
+    padding: 15px;
+    
+}
+.heroRight{
+    width: 65%;
+    padding: 15px;
+}
+.heroRight img{
+    max-width: 100%;
+    border-radius: 8px;
+}
+.heroRightTitle{
+    font-size: 24px;
+    font-weight: bold;
+}
+.heroRightDesc{
+    margin-top: 35px;
+    font-size: 16px;
+    color:rgb(219, 219, 219);
+}
+.heroRightButtons{
+    margin-top: 50px;
+}
+
 .universos{
    display: flex;
    justify-content: space-between;
 }
+.universo:hover{
+    -webkit-box-shadow: 0px 0px 20px -5px rgba(148,65,255,0.62); 
+    box-shadow: 0px 0px 20px -5px rgba(148,65,255,0.62); 
+}
 .universo{
+    text-align: center;
+    width: 16%;
     padding:30px;
     border-radius: 8px;
     background-color: #111217;
+    transition: all 0.3s ease;
 }
-.section-tittle{
-    display: flex;
-    justify-content: space-between;
-    border-left:2px solid #9441ff;
-    padding: 5px;
-    margin-bottom: 10px;
+.unviersoIcon{
+    font-size: 68px;
+    color:#a763ff;   
 }
-.section-tittle a{
+.universoTitle{
+    margin-top: 8px;
     font-size: 14px;
+    font-weight: bold;
+}
+.universoDesc{
+    margin-top: 12px;
+    font-size: 14px;
+    color:rgb(219, 219, 219);
+}
+.universeLink{
+    margin-top: 12px;
+    font-size: 12px;
 }
 .hero-bottom{
-    padding: 15px 0;
+    padding: 15px 0 30px 0;
     background-color: #0a0a10;
 }
 .universe-container{
     max-width: 1200px;
     margin: auto;
 }
+
+.section-tittle{
+    display: flex;
+    justify-content: space-between;
+    border-left:3px solid #9441ff;
+    padding: 5px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.section-tittle a{
+    font-size: 14px;
+}
+
 
 /* Centro CSS */
 .centro-container{
@@ -98,13 +195,11 @@ nav a:hover{
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    gap:20px
+    gap:5px
 }
-.sidebar{
-    background-color: #090a10;
-}
+
 .reciente{
-    width: 80%;
+    width: 75%;
     justify-content: center;
 }
 .ver-mas{
@@ -116,15 +211,10 @@ nav a:hover{
     width: 50%;
     text-align: center;
     padding: 5px 5px;
-    border: 1px solid #9441ff;
-    border-radius: 8px;
     font-weight: bold;
     transition: all 0.3s ease;
 }
-.ver-mas a:hover{
-    background-color: #2b114b;
-    
-}
+
 .ver-todo{
     display: flex;
     justify-content: space-between;
@@ -132,23 +222,228 @@ nav a:hover{
 .article-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 8px;
 }
 .article{
-    width: 32.8%;
-    background-color: red;
-    margin-top: 5px;
+    width: 32.3%;
+    background-color: #090a10;
+    margin-bottom: 5px;
     border-radius: 8px;
+    transition: all 0.3s ease;
+    border:1px solid rgba(144, 45, 250, 0.15);
+}
+.article:hover{
+    -webkit-box-shadow: 0px 0px 23px -8px rgba(148,65,255,0.62); 
+    box-shadow: 0px 0px 23px -8px rgba(148,65,255,0.62);
+}
+.article:hover .articleTitle{
+    color:#a763ff;
 }
 .articleImg img{
     max-width: 100%;
     position: relative;
     border-radius: 8px 8px 0 0;
 }
+.articleTag{
+    position: absolute;
+    background-color: #44198b;
+    padding: 5px 8px;
+    border-radius: 8px;
+    margin-top: -20px;
+    margin-left: 8px;
+    color:white;
+    font-size: 12px;
+}
+.articleTitle{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color:white;
+    transition: all 0.5s ease;
+}
+
+.articlePrev{
+    padding: 10px;
+    font-size: 14px;
+    color:rgb(219, 219, 219);
+}
+.articleMeta{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 12px;
+    color:rgb(106, 106, 106);
+}
+.articleMeta i{
+    margin-right: 3px;
+    color:#a763ff;
+}
 
 /* Sidebar CSS */
 .sidebar{
-    width: 20%;
+    width: 25%;
+    height: auto;
+}
+.sidebarWidget{
+ background-color: #090a10;
+ padding: 15px;
+ margin-bottom: 15px;
+ border-radius: 8px;
+  border:1px solid rgba(144, 45, 250, 0.15);
+}
+.widgetTitle{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.widgetSocials ul li{
+    list-style: none;
+    padding: 5px 0;
+}
+.widgetSocials a{
+    color:rgb(219, 219, 219);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+}
+.widgetSocials a:hover{
+    color:#a763ff;
+}
+.widgetSocials i{
+    margin-right: 5px;
+    color:#a763ff;
+}
+.postViewed a{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 10px;   
+}
+.postViewed a:hover .viewedTitle{
+    color:#a763ff;
+}
+
+.firstViewed{
+    margin-bottom: 20px;
+}
+.firstViewed h3{
+    color:rgb(219, 219, 219);
+    transition: all 0.5s ease;
+}
+.firstViewed:hover h3{
+    color:#a763ff;
+}
+.firstViewed img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+   
+}
+.viewedList ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.viewedList ul li{
+    width: 100%;
+    display: flex;
+    gap: 8px;
+}
+.viewedList .postImg{
+    width: 100%;
+}
+.viewedList .postImg img{
+    width: 80px;   
+    height: 80px;
+    border-radius: 8px;
+}
+.firstTitle{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color:white;
+    transition: all 0.5s ease;
+}
+
+.viewedTitle{
+    font-size: 14px;
+    font-weight: bold;
+    color:rgb(219, 219, 219);
+    transition: all 0.5s ease;
+}
+.viewedTags{
+    font-size: 12px;
+    color:rgb(106, 106, 106);
+}
+.rightCategory{
+    color:#a763ff;
+    font-size: 12px;
+}
+
+/*------ Category Post Lists CSS ------*/
+.postCategory a{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 10px;   
+}
+.postCategory a:hover .categoryTitle{
+    color:#a763ff;
+}
+
+.firstCategory{
+    margin-bottom: 20px;
+}
+.firstCategory h3{
+    color:rgb(219, 219, 219);
+    transition: all 0.5s ease;
+}
+.firstCategory:hover h3{
+    color:#a763ff;
+}
+.firstCategory img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
+.categoryList ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.categoryList ul li{
+    width: 100%;
+    display: flex;
+    gap: 8px;
+}
+.categoryList .postImg{
+    width: 100%;
+}
+.categoryList .postImg img{
+    width: 80px;   
+    height: 80px;
+    border-radius: 8px;
+}
+.firstTitle{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color:white;
+    transition: all 0.5s ease;
+}
+.categoryTitle{
+    font-size: 14px;
+    font-weight: bold;
+    color:rgb(219, 219, 219);
+    transition: all 0.5s ease;
+}
+.categoryDate{
+    font-size: 12px;
+    color:rgb(106, 106, 106);
 }
 
 
@@ -156,14 +451,17 @@ nav a:hover{
 footer{
     background-color: #090a10;
     margin-top: 10px;
-    border-top:1px solid #9441ff;
-    
+    border-top:1px solid rgba(144, 45, 250, 0.15); 
 }
 .footer-container{
     max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+}
+.footer-section{
+    width: 25%;
 }
 .footer-container ul{
     list-style: none;
@@ -177,15 +475,63 @@ footer{
    color:#a763ff;
 }
 .footer-container li{
-    padding: 8px 0;
+    padding: 3px 0;
 }
 .footer-title{
     font-weight: bold;
-    padding: 15px 0;
+    padding: 15px 0 5px 0;
 }
 .credits-container{
     max-width: 1200px;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap:5px;
+}
+.footer-logo{
+    margin-top: 15px;
+}
+.footer-logo img{
+    max-width: 100%;
+    height: auto;
+}
+.footer-logo p{
+    margin-top: 10px;
+    color:rgb(193, 193, 193);
+}
+.footerSusc{
+    color:rgb(193, 193, 193);
+}
+.footerSuscForm{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.footerSuscForm input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px 0px 0px 8px;
+    box-sizing: border-box;
+    background-color: #090a10;
+    border:1px solid rgba(144, 45, 250, 0.25);
+    color:rgb(193, 193, 193);
+}
+.footerSuscForm input:focus{
+    outline: none;
+    border:1px solid #9441ff;
+    background-color: #0b0414;
+}
+.footerSuscForm button{
+    border-radius: 0px 8px 8px 0px;
+}
+.footer-credits{
+    margin-top: 35px;
+    padding: 12px 0;
+    font-size: 12px;
+    font-weight: bold;
+    color:rgb(193, 193, 193);
+    border-top:1px solid rgba(144, 45, 250, 0.15);
+}
+.below-text{
+    margin-top: 15px;
 }

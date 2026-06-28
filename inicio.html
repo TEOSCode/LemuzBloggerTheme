@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +7,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Lemuz Theme</title>
 </head>
 <body>
-    <nav >
+    <nav>
         <div class="menu">
-            <div>Logo</div>
+            <div class="logo">
+               <a href="/"><img src="assets/LL Logo.png" alt="Logo" ></a>
+            </div>
             <div class="menu-list">
                 <ul>
-                    <li class="menu-selected"><a href="">Inicio</a></li>
-                    <li><a href="">Proyectos</a></li>
+                    <li class="menu-selected"><a href="">Proyectos</a></li>
                     <li><a href="">Blog</a></li>
                     <li><a href="">Biblioteca</a></li>
                     <li><a href="">Recursos</a></li>
@@ -29,7 +31,22 @@
     <div class="hero">
         <div class="hero-top">
             <div class="herotop-container">
-                Biendenido a Lemuz Labs
+                <div class="heroLeft">
+                    <div class="heroRightTitle">
+                        <h2>Bienvenido a</h2>
+                        <h1>Lemuz Labs</h1>
+                    </div>
+                    <div class="heroRightDesc">
+                        Mi laboratorio taller de ideas, donde comparto mis proyectos, conocimientos y recursos para la comunidad.
+                    </div>
+                    <div class="heroRightButtons">
+                        <a href="" class="btn morado">Explorar contenido <i class="fa-solid fa-flask"></i></a>
+                        <a href="" class="btn whiteText">Sobre Lemuz <i class="fa-solid fa-user"></i></a>
+                    </div>
+                </div>
+                <div class="heroRight">
+                    <img src="assets/banner.png" alt="">
+                </div>
             </div>
         </div>
         <div class="hero-bottom">
@@ -37,16 +54,70 @@
                 <div class="explore section-tittle">
                     <div>Explora mis universos</div>
                     <div>
-                        <a href="">Ver todos los proyectos</a>
+                        <a href="">Ver todos los proyectos <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="universos">
-                    <div class="universo">TEOS Enigmas</div>
-                    <div class="universo">Desarrollo</div>
-                    <div class="universo">WorldBuilding</div>
-                    <div class="universo">Biblioteca</div>
-                    <div class="universo">Economia & Trading</div>
-                    <div class="universo">Recetas</div>
+                    <div class="universo">
+                        <div class="unviersoIcon">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                        <div class="universoTitle">TEOS Enigmas</div>
+                        <div class="universoDesc">Un universo misterioso lleno de enigmas por resolver.</div>
+                        <div class="universeLink">
+                            <a href="">Ver proyecto <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="universo">
+                        <div class="unviersoIcon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div class="universoTitle">Desarrollo</div>
+                        <div class="universoDesc">Un universo misterioso lleno de enigmas por resolver.</div>
+                        <div class="universeLink">
+                            <a href="">Ver proyecto <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="universo">
+                        <div class="unviersoIcon">
+                            <i class="fa-regular fa-map"></i>
+                        </div>
+                        <div class="universoTitle">WorldBuilding</div>
+                        <div class="universoDesc">Un universo misterioso lleno de enigmas por resolver.</div>
+                        <div class="universeLink">
+                            <a href="">Ver proyecto <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="universo">
+                        <div class="unviersoIcon">
+                           <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <div class="universoTitle">Biblioteca</div>
+                        <div class="universoDesc">Un universo misterioso lleno de enigmas por resolver.</div>
+                        <div class="universeLink">
+                            <a href="">Ver proyecto <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="universo">
+                        <div class="unviersoIcon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="universoTitle">Economia & Trading</div>
+                        <div class="universoDesc">Un universo misterioso lleno de enigmas por resolver.</div>
+                        <div class="universeLink">
+                            <a href="">Ver proyecto <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="universo">
+                        <div class="unviersoIcon">
+                           <i class="fa-solid fa-bowl-rice"></i>
+                        </div>
+                        <div class="universoTitle">Recetas</div>
+                        <div class="universoDesc">Un universo misterioso lleno de enigmas por resolver.</div>
+                        <div class="universeLink">
+                            <a href="">Ver proyecto <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>        
         </div>
@@ -57,66 +128,534 @@
                 <div class="ver-todo section-tittle">
                     <div>Contenido Reciente</div>
                     <div>
-                        <a href="">Ver todo</a>
+                        <a href="">Ver todo <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="article-list">
                     <div class="article-container">
                         <article class="article">
-                            <div class="articleImg">
-                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
-                            </div>
-                            <div class="articleTitle">Titulo</div>
-                            <div class="articlePrev">Vista previa articulo</div>
-                            <div class="articleMeta">
-                                <div class="articleDate">16 Jun 2026</div>
-                                <div class="minsRead">6 Min</div>
-                            </div>
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
                         </article>
                         <article class="article">
-                            Articulo 2
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
                         </article>
                         <article class="article">
-                            Articulo 3
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
                         </article>
                         <article class="article">
-                            Articulo 4
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
                         </article>
                         <article class="article">
-                            Articulo 5
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
                         </article>
                         <article class="article">
-                            Articulo 6
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
                         </article>
                         <article class="article">
-                            Articulo 7
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
                         </article>
                         <article class="article">
-                            Articulo 8
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
                         </article>
                         <article class="article">
-                            Articulo 9
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
                         </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <div class="articleTitle">Titulo bueno para un post nuevos </div>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                       
                     </div>
                 </div>
                 <div class="ver-mas">
-                       <a href="">Ver mas</a>
+                       <a href="" class="btn">Ver mas <i class="fa-solid fa-arrow-right"></i></a>
                 </div>   
             </div>    
             <div class="sidebar">
-                <div>Contecta</div>
-                <div>Mas leidos</div>
+                <div class="sidebarWidget">
+                    <div class="widgetSocials">
+                        <div class="widgetTitle">Contacto</div>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="leftSocial">
+                                        <i class="fa-brands fa-facebook"></i> Facebook
+                                    </div>
+                                    <div class="rightSocial">
+                                        <i class="fa-solid fa-up-right-from-square"></i>
+                                    </div>
+                                </a>
+                            </li>
+                             <li>
+                                <a href="">
+                                    <div class="leftSocial">
+                                        <i class="fa-brands fa-twitter"></i> Twitter
+                                    </div>
+                                    <div class="rightSocial">
+                                        <i class="fa-solid fa-up-right-from-square"></i>
+                                    </div>
+                                </a>
+                            </li>
+                             <li>
+                                <a href="">
+                                    <div class="leftSocial">
+                                        <i class="fa-brands fa-instagram"></i> Instagram
+                                    </div>
+                                    <div class="rightSocial">
+                                        <i class="fa-solid fa-up-right-from-square"></i>
+                                    </div>
+                                </a>
+                            </li>
+                             <li>
+                                <a href="">
+                                    <div class="leftSocial">
+                                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                                    </div>
+                                    <div class="rightSocial">
+                                        <i class="fa-solid fa-up-right-from-square"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="leftSocial">
+                                        <i class="fa-brands fa-youtube"></i> YouTube
+                                    </div>
+                                    <div class="rightSocial">
+                                        <i class="fa-solid fa-up-right-from-square"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="sidebarWidget">
+                    <div class="widgetMostViewved">
+                        <div class="widgetTitle">Más leídos</div>
+                        <div class="viewedList">
+                            <ul>
+                                <li class="firstViewed">
+                                    <a href="" class="primero">
+                                        <div class="firstPortada">
+                                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                            <p class="articleTag">Obsidian, Mas Tags</p>
+                                        </div>
+                                        <h3 class="firstTitle">Titulo de articulo mas leido, pero un titulo mas largo, como lo va a tomar?</h3>   
+                                    </a>
+                                </li>
+                                <li class="postViewed">
+                                    <a href="">
+                                        <div class="rightViewed">
+                                            <div class="postImg">
+                                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8f2a4769-4850-4b68-94c6-a5e67539a0a2/dmbsu7l-e0720d5a-43a5-4543-8a7e-51f46a99e032.png/v1/fit/w_828,h_1216,q_70,strp/an_ancient__dark_castle_in_the_moonlight_by_edi_the_mad_dmbsu7l-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTIyMCIsInBhdGgiOiIvZi84ZjJhNDc2OS00ODUwLTRiNjgtOTRjNi1hNWU2NzUzOWEwYTIvZG1ic3U3bC1lMDcyMGQ1YS00M2E1LTQ1NDMtOGE3ZS01MWY0NmE5OWUwMzIucG5nIiwid2lkdGgiOiI8PTgzMSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.t_k1iJYuAsWbOiC2H2LRzqmkzao7dLvH7xBmovhyUBQ" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="leftviewed">
+                                            <p class="viewedTitle">Titulo de articulo mas leido, pero un titulo mas largo, como lo va a tomar?</p>
+                                            <p class="viewedTags">Obsidian, Mas Tags</p>
+                                        </div>  
+                                    </a>
+                                </li>
+                                <li class="postViewed">
+                                    <a href="">
+                                        <div class="rightViewed">
+                                           
+                                            <div class="postImg">
+                                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="leftviewed">
+                                            <p class="viewedTitle">Titulo de articulo mas leido, pero un titulo mas largo, como lo va a tomar?</p>
+                                            <p class="viewedTags">Obsidian, Mas Tags</p>
+                                        </div>
+                                        
+                                    </a>
+                                </li>
+                                <li class="postViewed">
+                                    <a href="">
+                                        <div class="rightViewed">
+                                           
+                                            <div class="postImg">
+                                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="leftviewed">
+                                            <p class="viewedTitle">Titulo de articulo mas leido, pero un titulo mas largo, como lo va a tomar?</p>
+                                            <p class="viewedTags">Obsidian, Mas Tags</p>
+                                        </div>
+                                        
+                                    </a>
+                                </li>
+                                <li class="postViewed">
+                                    <a href="">
+                                        <div class="rightViewed">
+                                          
+                                            <div class="postImg">
+                                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="leftviewed">
+                                            <p class="viewedTitle">Titulo de articulo mas leido, pero un titulo mas largo, como lo va a tomar?</p>
+                                            <p class="viewedTags">Obsidian, Mas Tags</p>
+                                        </div>
+                                        
+                                    </a>
+                                </li>
+                                <li class="postViewed">
+                                    <a href="">
+                                        <div class="rightViewed">
+                                            <div class="postImg">
+                                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="leftviewed">
+                                            <p class="viewedTitle">Titulo de articulo mas leido, pero un titulo mas largo, como lo va a tomar?</p>
+                                            <p class="viewedTags">Obsidian, Mas Tags</p>
+                                        </div>
+                                        
+                                    </a>
+                                </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebarWidget">
+                       <div class="widgetSocials">
+                        <div class="widgetTitle">Categorías</div>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="leftCategory">
+                                        TEOS Enigmas
+                                    </div>
+                                    <div class="rightCategory">
+                                        (10)
+                                    </div>
+                                </a>
+                            </li>
+                             <li>
+                                <a href="">
+                                    <div class="leftCategory">
+                                        Desarrollo
+                                    </div>
+                                    <div class="rightCategory">
+                                        (5)
+                                    </div>
+                                </a>
+                            </li>
+                             <li>
+                                <a href="">
+                                    <div class="leftCategory">
+                                        Worldbuilding
+                                    </div>
+                                    <div class="rightCategory">
+                                        (8)
+                                    </div>
+                                </a>
+                            </li>
+                             <li>
+                                <a href="">
+                                    <div class="leftCategory">
+                                        Biblioteca
+                                    </div>
+                                    <div class="rightCategory">
+                                        (12)
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="leftCategory">
+                                       Economia & Trading
+                                    </div>
+                                    <div class="rightCategory">
+                                        (10)
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                  <div class="sidebarWidget">
+                    <div class="widgetMostViewved">
+                        <div class="widgetTitle">Worldbuilding</div>
+                        <div class="viewedList">
+                            <ul>
+                                <li class="firstCategory">
+                                    <a href="" class="primero">
+                                        <div class="firstPortada">
+                                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                     
+                                        </div>
+                                        <h3 class="firstTitle">Titulo de articulo mas leido, pero un titulo mas largo, como lo va a tomar?</h3>   
+                                    </a>
+                                </li>
+                                <li class="postCategory">
+                                    <a href="">
+                                        <div class="rightViewed">
+                                            <div class="postImg">
+                                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8f2a4769-4850-4b68-94c6-a5e67539a0a2/dmbsu7l-e0720d5a-43a5-4543-8a7e-51f46a99e032.png/v1/fit/w_828,h_1216,q_70,strp/an_ancient__dark_castle_in_the_moonlight_by_edi_the_mad_dmbsu7l-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTIyMCIsInBhdGgiOiIvZi84ZjJhNDc2OS00ODUwLTRiNjgtOTRjNi1hNWU2NzUzOWEwYTIvZG1ic3U3bC1lMDcyMGQ1YS00M2E1LTQ1NDMtOGE3ZS01MWY0NmE5OWUwMzIucG5nIiwid2lkdGgiOiI8PTgzMSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.t_k1iJYuAsWbOiC2H2LRzqmkzao7dLvH7xBmovhyUBQ" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="leftviewed">
+                                            <p class="categoryTitle">Titulo de articulo mas leido, pero un titulo mas largo, como lo va a tomar?</p>
+                                            <p class="categoryDate">18 Jun 2026</p>
+                                        </div>  
+                                    </a>
+                                </li>
+                                <li class="postCategory">
+                                    <a href="">
+                                        <div class="rightViewed">
+                                           
+                                            <div class="postImg">
+                                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="leftviewed">
+                                            <p class="categoryTitle">Titulo de articulo mas leido, pero un titulo mas largo, como lo va a tomar?</p>
+                                            <p class="categoryDate">18 Jun 2026</p>
+                                        </div>
+                                        
+                                    </a>
+                                </li>
+                                <li class="postCategory">
+                                    <a href="">
+                                        <div class="rightViewed">
+                                           
+                                            <div class="postImg">
+                                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="leftviewed">
+                                            <p class="categoryTitle">Titulo de articulo mas leido, pero un titulo mas largo, como lo va a tomar?</p>
+                                            <p class="categoryDate">18 Jun 2026</p>
+                                        </div>
+                                        
+                                    </a>
+                                </li>
+                                <li class="postCategory">
+                                    <a href="">
+                                        <div class="rightViewed">
+                                          
+                                            <div class="postImg">
+                                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="leftviewed">
+                                            <p class="categoryTitle">Titulo de articulo mas leido, pero un titulo mas largo, como lo va a tomar?</p>
+                                            <p class="categoryDate">18 Jun 2026</p>
+                                        </div>
+                                        
+                                    </a>
+                                </li>
+                                <li class="postCategory">
+                                    <a href="">
+                                        <div class="rightViewed">
+                                            <div class="postImg">
+                                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="leftviewed">
+                                            <p class="categoryTitle">Titulo de articulo mas leido, pero un titulo mas largo, como lo va a tomar?</p>
+                                            <p class="categoryDate">18 Jun 2026</p>
+                                        </div>
+                                        
+                                    </a>
+                                </li>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
     </div>
     <footer>
         <div class="footer-container">
-            <div>
-                <div>Imagen logo</div>
-                <p>Texto debajo del logo</p>
+            <div class="footer-section">
+                <div class="footer-logo">
+                     <img src="assets/LL Logo.png" alt="Logo" >
+                      <p>Texto debajo del logo, un texto de ejemplo para llenar el espacio y ver cómo se ve en la página</p>
+                </div>
             </div>
-            <div>
+            <div class="footer-section">
                 <div class="footer-title">Navegacion</div>
                 <div>
                     <ul>
@@ -127,30 +666,39 @@
                     </ul>
                 </div>
             </div>
-            <div> 
+            <div class="footer-section"> 
                 <div class="footer-title">Categorias</div>
                 <div>
                     <ul>
-                        <li><a href="">Inicio</a></li>
-                        <li><a href="">Proyectos</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Recrusos</a></li>
+                        <li><a href="">TEOS Enigas</a></li>
+                        <li><a href="">Desarrollo</a></li>
+                        <li><a href="">Worldbuilding</a></li>
+                        <li><a href="">Recursos</a></li>
+                        <li><a href="">Economia & Trading</a></li>
+                        <li><a href="">Recetas</a></li>
                     </ul>
                 </div>
             </div>
-            <div>
+            <div class="footer-section">
                 <div class="footer-title">Suscribete</div>
-                <p>Recibe actualizacones</p>
-                <p>Sin spam</p>
+                <div class="footerSusc">
+                    <p>Recibe actualizacones sobre nuevos articulos y proyectos</p>
+                        <form action="" method="post" class="footerSuscForm">
+                            <input type="email" name="email" placeholder="Ingresa tu correo">
+                            <button type="submit" class="btn morado"><i class="fa-solid fa-arrow-right"></i></button>
+                        </form>
+                    <p class="below-text">Sin spam. Solo contenido de calidad.</p>
+                </div>
+                
             </div>
         </div>
         <div class="footer-credits">
             <div class="credits-container">
                 <div>2018 - 2026 Lemuz Labs.</div>
-                <div>Hecho con pasion y mucho cafe</div>
+                <div> <i class="fa-solid fa-code" style="color: #a763ff;"></i> Hecho con pasion y mucho cafe</div>
             </div>
-           
         </div> 
     </footer>
 </body>
+
 </html>
