@@ -486,7 +486,7 @@ footer{
     margin: auto;
     display: flex;
     justify-content: center;
-    gap:5px;
+    gap:25px;
 }
 .footer-logo{
     margin-top: 15px;
