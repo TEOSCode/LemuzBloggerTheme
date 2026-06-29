@@ -137,7 +137,7 @@ header{
   }
 }
 /* === MEDIA QUERIES === */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     header{
         width: 100%;
         margin: auto;
@@ -235,7 +235,7 @@ a{
 
 
 /* Menu CSS */
-@media (min-width: 600px) {
+@media only screen and (min-width: 1024px) {
     nav{
         overflow: hidden !important;
         position: fixed !important; /* Set the navbar to fixed position */
@@ -261,16 +261,16 @@ a{
 }
 
 /* Hero CSS */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1024px) {
     .herotop-container{
         flex-direction: row !important;
     }
     .heroLeft{
-        width: 35%;
+        width: 40% !important;
         padding: 15px;  
     }
     .heroRight{
-        width: 65%;
+        width: 60% !important;
         padding: 15px;
     }
 }
@@ -324,7 +324,7 @@ a{
 .universeHero{
     margin-top: 15px;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1024px) {
     .universo{
         width: 16%;
     }
@@ -399,7 +399,7 @@ a{
 
 
 /* Centro CSS */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1024px) {
     .article-container{
         width: 100% !important;
         margin: auto;
@@ -693,7 +693,7 @@ a{
 
 
 /* Footer CSS */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1024px) {
     .footer-container{
         justify-content: space-between;
         flex-direction: row !important;
