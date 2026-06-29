@@ -10,6 +10,196 @@ body{
     color: white;
     margin: auto;
 }
+/* -- Prueba mobile menu*/
+/* === VARIABLES CSS === */
+:root {
+  --header-height: 60px;
+
+  /* COLORS */
+  --color-white: #fff;
+  --color-dark: #22282e;
+  --color-dark-secondary: #33363b;
+  --color-dark-border: #282b30;
+  --color-primary: #ffc700;
+  --color-primary-hover: #e0a500;
+  --color-accent: #f78ca0;
+  --color-shadow: rgba(0, 0, 0, 0.5);
+}
+
+/* === HEADER === */
+header{
+    background:black;
+    height: 60px;
+    width: 100%;
+    -webkit-box-shadow: 0px 10px 15px -10px rgba(148,65,255,0.21); 
+    box-shadow: 0px 10px 15px -10px rgba(148,65,255,0.21);
+    border-bottom:1px solid rgba(144, 45, 250, 0.15); 
+}
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+  position: relative;
+  padding: 10px 20px;
+  z-index: 100;
+}
+
+.site-logo {
+  width: auto;
+}
+.site-logo img{
+    height: 55px;
+}
+
+/* === MAIN NAV === */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* === NAV MENU === */
+.nav-menu {
+  position: absolute;
+  top: var(--header-height);
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+
+  /* CSS Nesting */
+  li {
+    background: #090a10;
+    display: block;
+    border-bottom: 1px solid rgba(144, 45, 250, 0.15);
+  }
+
+  a {
+    display: block;
+    color: var(--color-white);
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 10px;
+
+    &:active,
+    &:focus {
+      color:#a763ff;
+    }
+  }
+
+  &.is-open {
+    box-shadow: 0 1px 2px var(--color-shadow);
+    max-height: fit-content;
+  }
+}
+
+/* === MOBILE TOGGLE BTN === */
+.mobile-toggle-btn {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  opacity: 0.6;
+
+  &.nav-open {
+    opacity: 1;
+  }
+
+  span {
+    display: block;
+    width: 60%;
+    margin: 4px auto;
+    height: 4px;
+    background: var(--color-white);
+  }
+}
+
+/* === NAV RIGHT === */
+.nav-right {
+  display: flex;
+  gap: 5px;
+}
+
+/* === HEADER PRIMARY BTN === */
+.header-primary-btn {
+  background: var(--color-primary);
+  color: var(--color-dark);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+
+  &:hover {
+    background: var(--color-primary-hover);
+  }
+}
+/* === MEDIA QUERIES === */
+@media only screen and (min-width: 768px) {
+    header{
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        overflow: hidden !important;
+        position: fixed !important; /* Set the navbar to fixed position */
+        top: 0 !important; /* Position the navbar at the top of the page */
+        z-index: 100;
+    }
+    .site-header{
+        width: 1200px;
+        margin: auto;
+        background-color: black;
+        display: flex !important;
+        justify-content: space-between;
+        
+     
+    }
+    #menu-toggle {
+        display: none;
+    }
+
+  .main-nav {
+    display: flex !important;
+    justify-content: flex-end !important;
+    top: 0;
+    position: relative !important;
+  }
+
+  .nav-menu {
+    display: flex;
+    position: static;
+    max-height: inherit;
+
+    li {
+      border: 0;
+      background: transparent;
+
+      a {
+        display: block;
+        padding: 8px 0;
+        text-decoration: none;
+        color:rgb(219, 219, 219);
+        transition: all 0.3s ease;
+
+        &:hover {
+          color:#a763ff;
+        }
+      }
+    }
+
+    &.is-open {
+      box-shadow: none;
+    }
+  }
+
+  .mobile-btn {
+    display: none;
+  }
+}
+/* Termina CSS prueba menu */
+
 a{
     text-decoration: none;
     color:#a763ff;
@@ -43,56 +233,47 @@ a{
 }
 
 
-/* Menu CSS */
-nav{
-    background-color: black;
-    height: 65px;
-    width: 100%;
-    -webkit-box-shadow: 0px 10px 15px -10px rgba(148,65,255,0.21); 
-    box-shadow: 0px 10px 15px -10px rgba(148,65,255,0.21);
-    z-index: 100;
-    overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-}
-nav ul{
-    display: flex;
-    list-style: none; /* Elimina los puntos de la lista */
-    padding: 0;
-    margin: 0;
-    gap: 20px; /* Espacio entre los elementos (opcional) */
-    font-size: 15px;
-}
-nav li{
-    padding: 25px 0;
-}
-nav a{
-    padding: 8px 0;
-    text-decoration: none;
-    color:rgb(219, 219, 219);
-    transition: all 0.3s ease;
-}
-nav a:hover{
-   color:#a763ff;
-}
-.menu{
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-.menu-selected a{
-    color:#a763ff;
-    border-bottom: 2px solid #a763ff;
-}
-.logo img{
-    margin-top: 2px;
-    height: 60px;
-    width: auto;
-}
 
+/* Menu CSS */
+@media (min-width: 600px) {
+    nav{
+        overflow: hidden !important;
+        position: fixed !important; /* Set the navbar to fixed position */
+        top: 0 !important; /* Position the navbar at the top of the page */
+    }
+    nav ul{
+        display: flex;
+        list-style: none; /* Elimina los puntos de la lista */
+        padding: 0;
+        margin: 0;
+        gap: 20px; /* Espacio entre los elementos (opcional) */
+        font-size: 15px;
+    }
+    nav li{
+        padding: 25px 0;
+    }
+    .nav-mobile{
+        display: none;
+    }
+    .menu-list{
+        display: block !important;
+    }
+}
 
 /* Hero CSS */
+@media only screen and (min-width: 600px) {
+    .herotop-container{
+        flex-direction: row !important;
+    }
+    .heroLeft{
+        width: 35%;
+        padding: 15px;  
+    }
+    .heroRight{
+        width: 65%;
+        padding: 15px;
+    }
+}
 .hero{
     margin: auto;
     margin-top: 68px;
@@ -102,16 +283,16 @@ nav a:hover{
     margin: auto;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     padding: 15px 0;
     align-items: center;
 }
 .heroLeft{
-    width: 35%;
-    padding: 15px;
-    
+    width: 100%;
+    padding: 15px;  
 }
 .heroRight{
-    width: 65%;
+    width: 100%;
     padding: 15px;
 }
 .heroRight img{
@@ -122,6 +303,9 @@ nav a:hover{
     font-size: 24px;
     font-weight: bold;
 }
+.heroRightTitle span{
+    color:#a763ff;
+}
 .heroRightDesc{
     margin-top: 35px;
     font-size: 16px;
@@ -130,10 +314,35 @@ nav a:hover{
 .heroRightButtons{
     margin-top: 50px;
 }
-
+.heroRightButtons .btn{
+    margin: auto;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+.universeHero{
+    margin-top: 15px;
+}
+@media only screen and (min-width: 600px) {
+    .universo{
+        width: 16%;
+    }
+    .universos{
+        justify-content: space-between !important;
+        flex-direction: row !important;
+        gap: 15px !important;
+    }
+}
+.hero-bottom{
+    width: 90%;
+    margin: auto;
+}
 .universos{
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
+   flex-direction: column;
+   gap: 15px 0;
 }
 .universo:hover{
     -webkit-box-shadow: 0px 0px 20px -5px rgba(148,65,255,0.62); 
@@ -141,11 +350,12 @@ nav a:hover{
 }
 .universo{
     text-align: center;
-    width: 16%;
+    width: 100%;
     padding:30px;
     border-radius: 8px;
     background-color: #111217;
     transition: all 0.3s ease;
+    cursor: normal;
 }
 .unviersoIcon{
     font-size: 68px;
@@ -167,7 +377,7 @@ nav a:hover{
 }
 .hero-bottom{
     padding: 15px 0 30px 0;
-    background-color: #0a0a10;
+    /* background-color: #0a0a10; */
 }
 .universe-container{
     max-width: 1200px;
@@ -189,18 +399,28 @@ nav a:hover{
 
 
 /* Centro CSS */
+@media only screen and (min-width: 600px) {
+    .article-container{
+        width: 100% !important;
+        margin: auto;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        justify-content: left !important;
+        gap: 15px 8px !important;    
+    }
+    .article{
+        width: 19.4%; 
+        
+    }
+}
+.centro{
+    width: 100%;
+}
 .centro-container{
+    width: 100%;
     max-width: 1200px;
     margin: auto;
     margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    gap:5px
-}
-
-.reciente{
-    width: 75%;
-    justify-content: center;
 }
 .ver-mas{
     display: flex;
@@ -208,31 +428,56 @@ nav a:hover{
     margin-top: 15px;
 }
 .ver-mas a{
-    width: 50%;
+    width: 30%;
     text-align: center;
     padding: 5px 5px;
     font-weight: bold;
     transition: all 0.3s ease;
 }
-
-.ver-todo{
+.paginacion{
+    width:100%;
+    max-width: 1200px;
     display: flex;
-    justify-content: space-between;
-}
-.article-container{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
+    margin-top: 15px;
 }
+.paginacion ul{
+    display: flex;
+    gap: 5px;
+    list-style: none;
+}
+.paginacion ul li{
+    padding: 5px 10px;
+    border:1px solid rgba(144, 45, 250, 0.30);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.paginacion ul li:hover{
+    background-color: #2b114b;
+}
+
+.category{
+    margin-top: 25px
+}
+.article-list{
+    width: 100%;
+}
+.article-container{ 
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px 0px;
+  } 
 .article{
-    width: 32.3%;
     background-color: #090a10;
     margin-bottom: 5px;
     border-radius: 8px;
     transition: all 0.3s ease;
     border:1px solid rgba(144, 45, 250, 0.15);
-}
+  }
+
 .article:hover{
     -webkit-box-shadow: 0px 0px 23px -8px rgba(148,65,255,0.62); 
     box-shadow: 0px 0px 23px -8px rgba(148,65,255,0.62);
@@ -280,11 +525,11 @@ nav a:hover{
     color:#a763ff;
 }
 
-/* Sidebar CSS */
+/* Sidebar CSS 
 .sidebar{
     width: 25%;
     height: auto;
-}
+}*/
 .sidebarWidget{
  background-color: #090a10;
  padding: 15px;
@@ -448,20 +693,31 @@ nav a:hover{
 
 
 /* Footer CSS */
+@media only screen and (min-width: 600px) {
+    .footer-container{
+        justify-content: space-between;
+        flex-direction: row !important;
+    }
+    .footer-section{
+         width: 25% !important;
+    }
+}
+
 footer{
     background-color: #090a10;
-    margin-top: 10px;
     border-top:1px solid rgba(144, 45, 250, 0.15); 
 }
 .footer-container{
+    width: 90%;
     max-width: 1200px;
     margin: auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 10px;
 }
 .footer-section{
-    width: 25%;
+    width: 100%;
 }
 .footer-container ul{
     list-style: none;
@@ -490,8 +746,11 @@ footer{
 }
 .footer-logo{
     margin-top: 15px;
+    text-align: center;
 }
 .footer-logo img{
+    
+    margin: auto;
     max-width: 100%;
     height: auto;
 }

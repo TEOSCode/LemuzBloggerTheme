@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -11,30 +12,45 @@
     <title>Lemuz Theme</title>
 </head>
 <body>
-    <nav>
-        <div class="menu">
-            <div class="logo">
-               <a href="/"><img src="assets/LL Logo.png" alt="Logo" ></a>
-            </div>
-            <div class="menu-list">
-                <ul>
-                    <li class="menu-selected"><a href="">Proyectos</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Biblioteca</a></li>
-                    <li><a href="">Recursos</a></li>
-                    <li><a href="">Sobre mi</a></li>
-                </ul>
-            </div>
+    <header>
+        <div class="site-header">
+                <div class="site-logo">
+                    <a href="/" class="site-logo-link">
+                        <img src="/assets/LL Logo.png" alt="">
+                    </a>
+                </div>
+
+                <nav class="main-nav">
+                    <ul class="nav-menu">
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Proyectos</a></li>
+                        <li><a href="#">Economía & Trading</a></li>
+                        <li><a href="#">Worldbuilding</a></li>
+                        <li><a href="#">Biblioteca</a></li>
+                        <li><a href="#">Recetas</a></li>
+                    </ul>
+                    <div class="nav-right">
+                
+                    <button class="mobile-toggle-btn" id="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    </div>
+                </nav>
         </div>
-        
-    </nav>
+    </header>
+    
+    
     <div class="hero">
         <div class="hero-top">
             <div class="herotop-container">
                 <div class="heroLeft">
                     <div class="heroRightTitle">
                         <h2>Bienvenido a</h2>
-                        <h1>Lemuz Labs</h1>
+                        <h1>Lemuz <span>Labs</span></h1>
                     </div>
                     <div class="heroRightDesc">
                         Mi laboratorio taller de ideas, donde comparto mis proyectos, conocimientos y recursos para la comunidad.
@@ -49,84 +65,12 @@
                 </div>
             </div>
         </div>
-        <div class="hero-bottom">
-            <div class="universe-container">
-                <div class="explore section-tittle">
-                    <div>Explora mis universos</div>
-                    <div>
-                        <a href="">Ver todos los proyectos <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="universos">
-                    <div class="universo">
-                        <div class="unviersoIcon">
-                            <i class="fa-regular fa-circle-play"></i>
-                        </div>
-                        <div class="universoTitle">TEOS Enigmas</div>
-                        <div class="universoDesc">Un universo misterioso lleno de enigmas por resolver.</div>
-                        <div class="universeLink">
-                            <a href="">Ver proyecto <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="universo">
-                        <div class="unviersoIcon">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-                        <div class="universoTitle">Desarrollo</div>
-                        <div class="universoDesc">Un universo misterioso lleno de enigmas por resolver.</div>
-                        <div class="universeLink">
-                            <a href="">Ver proyecto <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="universo">
-                        <div class="unviersoIcon">
-                            <i class="fa-regular fa-map"></i>
-                        </div>
-                        <div class="universoTitle">WorldBuilding</div>
-                        <div class="universoDesc">Un universo misterioso lleno de enigmas por resolver.</div>
-                        <div class="universeLink">
-                            <a href="">Ver proyecto <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="universo">
-                        <div class="unviersoIcon">
-                           <i class="fa-solid fa-book-open"></i>
-                        </div>
-                        <div class="universoTitle">Biblioteca</div>
-                        <div class="universoDesc">Un universo misterioso lleno de enigmas por resolver.</div>
-                        <div class="universeLink">
-                            <a href="">Ver proyecto <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="universo">
-                        <div class="unviersoIcon">
-                            <i class="fa-solid fa-chart-line"></i>
-                        </div>
-                        <div class="universoTitle">Economia & Trading</div>
-                        <div class="universoDesc">Un universo misterioso lleno de enigmas por resolver.</div>
-                        <div class="universeLink">
-                            <a href="">Ver proyecto <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="universo">
-                        <div class="unviersoIcon">
-                           <i class="fa-solid fa-bowl-rice"></i>
-                        </div>
-                        <div class="universoTitle">Recetas</div>
-                        <div class="universoDesc">Un universo misterioso lleno de enigmas por resolver.</div>
-                        <div class="universeLink">
-                            <a href="">Ver proyecto <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>        
-        </div>
     </div>
     <div class="centro">
         <div class="centro-container">
             <div class="reciente">
-                <div class="ver-todo section-tittle">
-                    <div>Contenido Reciente</div>
+               <div class="ver-todo section-tittle">
+                    <h2>Contenido Reciente</h2>
                     <div>
                         <a href="">Ver todo <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
@@ -142,7 +86,7 @@
                                     <div class="articleTag">Obsidian</div>
                                 </div>
                                 <div class="articleInfo">
-                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <h3 class="articleTitle">Titulo bueno para un post 1</h3>
                                     <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
                                     <div class="articleMeta">
                                         <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
@@ -161,7 +105,7 @@
                                     <div class="articleTag">Obsidian</div>
                                 </div>
                                 <div class="articleInfo">
-                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
                                     <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
                                     <div class="articleMeta">
                                         <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
@@ -180,7 +124,7 @@
                                     <div class="articleTag">Obsidian</div>
                                 </div>
                                 <div class="articleInfo">
-                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
                                     <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
                                     <div class="articleMeta">
                                         <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
@@ -199,7 +143,7 @@
                                     <div class="articleTag">Obsidian</div>
                                 </div>
                                 <div class="articleInfo">
-                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
                                     <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
                                     <div class="articleMeta">
                                         <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
@@ -218,7 +162,7 @@
                                     <div class="articleTag">Obsidian</div>
                                 </div>
                                 <div class="articleInfo">
-                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
                                     <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
                                     <div class="articleMeta">
                                         <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
@@ -237,7 +181,7 @@
                                     <div class="articleTag">Obsidian</div>
                                 </div>
                                 <div class="articleInfo">
-                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
                                     <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
                                     <div class="articleMeta">
                                         <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
@@ -256,7 +200,7 @@
                                     <div class="articleTag">Obsidian</div>
                                 </div>
                                 <div class="articleInfo">
-                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
                                     <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
                                     <div class="articleMeta">
                                         <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
@@ -275,7 +219,7 @@
                                     <div class="articleTag">Obsidian</div>
                                 </div>
                                 <div class="articleInfo">
-                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
                                     <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
                                     <div class="articleMeta">
                                         <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
@@ -294,7 +238,7 @@
                                     <div class="articleTag">Obsidian</div>
                                 </div>
                                 <div class="articleInfo">
-                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
                                     <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
                                     <div class="articleMeta">
                                         <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
@@ -313,7 +257,7 @@
                                     <div class="articleTag">Obsidian</div>
                                 </div>
                                 <div class="articleInfo">
-                                    <div class="articleTitle">Titulo bueno para un post </div>
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
                                     <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
                                     <div class="articleMeta">
                                         <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
@@ -322,34 +266,663 @@
                                 </div>
                                 
                             </a>
-                        </article>
-                        <article class="article">
-                            <a href="" class="articleLink">
-                                <div class="imgTag">
-                                    <div class="articleImg">
-                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
-                                    </div>
-                                    <div class="articleTag">Obsidian</div>
-                                </div>
-                                <div class="articleInfo">
-                                    <div class="articleTitle">Titulo bueno para un post nuevos </div>
-                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
-                                    <div class="articleMeta">
-                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
-                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
-                                    </div>
-                                </div>
-                                
-                            </a>
-                        </article>
-                       
+                        </article>                       
                     </div>
                 </div>
-                <div class="ver-mas">
-                       <a href="" class="btn">Ver mas <i class="fa-solid fa-arrow-right"></i></a>
-                </div>   
+
+                <div class="paginacion">
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-chevron-left"></i> Anterior</a></li>
+                        <li><a href="">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">Siguiente <i class="fa-solid fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
             </div>    
-            <div class="sidebar">
+            <div class="category">
+               <div class="ver-todo section-tittle">
+                    <h2>Recetas</h2>
+                    <div>
+                        <a href="">Ver todo <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="article-list">
+                    <div class="article-container">
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>              
+                    </div>
+                </div>
+            </div> 
+            <div class="category">
+               <div class="ver-todo section-tittle">
+                    <h2>Worldbuilding</h2>
+                    <div>
+                        <a href="">Ver todo <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="article-list">
+                    <div class="article-container">
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>              
+                    </div>
+                </div>
+            </div> 
+            <div class="category">
+               <div class="ver-todo section-tittle">
+                    <h2>Desarrollo</h2>
+                    <div>
+                        <a href="">Ver todo <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="article-list">
+                    <div class="article-container">
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>              
+                    </div>
+                </div>
+            </div> 
+            <div class="category">
+               <div class="ver-todo section-tittle">
+                    <h2>Economia & Trading</h2>
+                    <div>
+                        <a href="">Ver todo <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="article-list">
+                    <div class="article-container">
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>              
+                    </div>
+                </div>
+            </div> 
+             <div class="category">
+               <div class="ver-todo section-tittle">
+                    <h2>TEOS Enigmas</h2>
+                    <div>
+                        <a href="">Ver todo <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="article-list">
+                    <div class="article-container">
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>              
+                    </div>
+                </div>
+            </div> 
+             <div class="category">
+               <div class="ver-todo section-tittle">
+                    <h2>Lemuz Labs</h2>
+                    <div>
+                        <a href="">Ver todo <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="article-list">
+                    <div class="article-container">
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>
+                        <article class="article">
+                            <a href="" class="articleLink">
+                                <div class="imgTag">
+                                    <div class="articleImg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05d907af-cac9-4b23-ba65-ed2828ba0acc/dm2emby-041e6333-f4fb-4532-91cf-65c264652405.jpg/v1/fill/w_1131,h_707,q_70,strp/the_lost_castle_by_zedlord_art_dm2emby-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzA1ZDkwN2FmLWNhYzktNGIyMy1iYTY1LWVkMjgyOGJhMGFjYy9kbTJlbWJ5LTA0MWU2MzMzLWY0ZmItNDUzMi05MWNmLTY1YzI2NDY1MjQwNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hR6-Fwpsz_GQFASNNvQ6eOToZUC8TKAxAUmOyUZR4ac" alt="">
+                                    </div>
+                                    <div class="articleTag">Obsidian</div>
+                                </div>
+                                <div class="articleInfo">
+                                    <h3 class="articleTitle">Titulo bueno para un post </h3>
+                                    <div class="articlePrev">Vista previa articulo, con mas texto para ver que pasa con todo ete texto que va a ser de preview</div>
+                                    <div class="articleMeta">
+                                        <div class="articleDate"><i class="fa-regular fa-calendar"></i> 16 Jun 2026</div>
+                                        <div class="minsRead"><i class="fa-regular fa-clock"></i> 6 Min</div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </article>              
+                    </div>
+                </div>
+            </div> 
+            <!--<div class="sidebar">
                 <div class="sidebarWidget">
                     <div class="widgetSocials">
                         <div class="widgetTitle">Contacto</div>
@@ -643,9 +1216,82 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
-        
+          <div class="universeHero">
+                    <div class="hero-bottom">
+                        <div class="universe-container">
+                            <div class="explore section-tittle">
+                                <h2>Explora mis universos</h2>
+                                <div>
+                                    <a href="">Ver todos los proyectos <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="universos">
+                                <div class="universo">
+                                    <div class="unviersoIcon">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                    <div class="universoTitle">TEOS Enigmas</div>
+                                    <div class="universoDesc">Un universo misterioso lleno de enigmas por resolver.</div>
+                                    <div class="universeLink">
+                                        <a href="">Ver proyecto <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="universo">
+                                    <div class="unviersoIcon">
+                                        <i class="fa-solid fa-code"></i>
+                                    </div>
+                                    <div class="universoTitle">Desarrollo</div>
+                                    <div class="universoDesc">Un universo misterioso lleno de enigmas por resolver.</div>
+                                    <div class="universeLink">
+                                        <a href="">Ver proyecto <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="universo">
+                                    <div class="unviersoIcon">
+                                        <i class="fa-regular fa-map"></i>
+                                    </div>
+                                    <div class="universoTitle">WorldBuilding</div>
+                                    <div class="universoDesc">Un universo misterioso lleno de enigmas por resolver.</div>
+                                    <div class="universeLink">
+                                        <a href="">Ver proyecto <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="universo">
+                                    <div class="unviersoIcon">
+                                    <i class="fa-solid fa-book-open"></i>
+                                    </div>
+                                    <div class="universoTitle">Biblioteca</div>
+                                    <div class="universoDesc">Un universo misterioso lleno de enigmas por resolver.</div>
+                                    <div class="universeLink">
+                                        <a href="">Ver proyecto <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="universo">
+                                    <div class="unviersoIcon">
+                                        <i class="fa-solid fa-chart-line"></i>
+                                    </div>
+                                    <div class="universoTitle">Economia & Trading</div>
+                                    <div class="universoDesc">Un universo misterioso lleno de enigmas por resolver.</div>
+                                    <div class="universeLink">
+                                        <a href="">Ver proyecto <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="universo">
+                                    <div class="unviersoIcon">
+                                    <i class="fa-solid fa-bowl-rice"></i>
+                                    </div>
+                                    <div class="universoTitle">Recetas</div>
+                                    <div class="universoDesc">Un universo misterioso lleno de enigmas por resolver.</div>
+                                    <div class="universeLink">
+                                        <a href="">Ver proyecto <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
+                </div> 
     </div>
     <footer>
         <div class="footer-container">
@@ -700,5 +1346,13 @@
         </div> 
     </footer>
 </body>
+ <script>
+        const menuToggle = document.querySelector("#menu-toggle");
+        const navMenu = document.querySelector(".nav-menu");
 
+        menuToggle.addEventListener("click", (e) => {
+        e.currentTarget.classList.toggle("nav-open");
+        navMenu.classList.toggle("is-open");
+        });
+    </script>
 </html>
