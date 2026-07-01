@@ -774,6 +774,9 @@ a{
     .credits-container{
         flex-direction: row !important;
     }
+    .footerLogoText p{
+        text-align: initial !important;
+    }
 }
 
 footer{
@@ -859,6 +862,9 @@ footer{
 .footer-logo p{
     margin-top: 3px;
     color:rgb(193, 193, 193);
+}
+.footerLogoText p{
+    text-align: justify;
 }
 .footerSusc{
     color:rgb(193, 193, 193);
