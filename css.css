@@ -864,7 +864,7 @@ footer{
     color:rgb(193, 193, 193);
 }
 .footerLogoText p{
-    text-align: justify;
+    text-align: justify-all;
 }
 .footerSusc{
     color:rgb(193, 193, 193);
